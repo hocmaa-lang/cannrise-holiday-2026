@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cannrise Holiday 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,300&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#EDC97E;--bone:#F8F3E6;--canopy:#1B4332;--clay:#C97C4C;--ink:#26291F;--muted:#5a5348;--line:#ddd2ba}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5}
+header{background:var(--canopy);color:var(--bone);padding:48px 16px 40px;text-align:center;border-bottom:8px solid var(--clay)}
+.eb{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+header .eb{color:var(--sand)}
+h1{font-family:Fraunces,serif;font-weight:500;font-size:clamp(30px,5vw,48px);margin:12px 0 10px;line-height:1.1}
+h1 em,h2 em{font-weight:300;font-style:italic}
+h1 em{color:var(--sand)}
+header p{margin:0 auto;max-width:640px;opacity:.9}
+nav{position:sticky;top:0;z-index:5;background:var(--sand);display:flex;justify-content:center;gap:8px;padding:12px 16px;flex-wrap:wrap}
+nav a{background:var(--canopy);color:var(--bone);text-decoration:none;padding:9px 18px;border-radius:2px;font-weight:600;font-size:14px}
+main{max-width:1040px;margin:0 auto;padding:0 16px 64px}
+section{padding:48px 0 16px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+h2{font-family:Fraunces,serif;font-weight:500;font-size:clamp(24px,3.5vw,34px);color:var(--canopy);margin:6px 0 4px}
+section>.eb{color:var(--canopy)}
+.asin{color:var(--muted);font-size:14px;margin:0 0 24px}
+h3{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:32px 0 10px}
+.card{margin:0 0 18px}
+.card img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:2px}
+.sq{max-width:760px}
+.cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:6px}
+.cap a{color:var(--canopy);font-weight:600}
+footer{text-align:center;padding:32px 16px;color:var(--muted);font-size:13px}
+footer .f{font-family:Fraunces,serif;font-style:italic;font-weight:300;font-size:20px;color:var(--canopy)}
+</style>
+</head>
+<body>
+<header>
+  <div class="eb">Amazon · Holiday 2026</div>
+  <h1>Cannrise Christmas <em>listing image 2 + A+</em></h1>
+  <p>A holiday version of listing image 2 and a four-module A+ for each product line. Click any image to open it full size; download links sit under each one.</p>
+</header>
+<nav><a href="#riser">Plant Riser</a><a href="#coco">Coco Grow Bags</a><a href="#ties">Anchor Plant Ties</a></nav>
+<main id="m"></main>
+<footer><div class="f">Thinking Green.</div></footer>
+<script>
+const P=[
+ {k:'riser',n:'Plant Riser',a:'Standard Black · 5 / 7 / 10-pack family (B0D98Q9Z1R)'},
+ {k:'coco',n:'Coco Coir Grow Bags',a:'5-pack, 1 gallon (B0F7QTT5VV)'},
+ {k:'ties',n:'Anchor Rubber Plant Ties',a:'110-pack, 1.96 in (B0F1V14XDF)'}];
+const M=[['aplus_01_hero','Module 1 · Holiday hero'],['aplus_02_why','Module 2 · Why growers ask for it'],['aplus_03_steps','Module 3 · Three steps'],['aplus_04_story','Module 4 · Brand story']];
+document.getElementById('m').innerHTML=P.map(p=>{
+ const l=`${p.k}/${p.k}_listing_image_02_holiday_2000x2000.jpg`;
+ return `<section id="${p.k}"><div class="eb">Product</div><h2>${p.n}</h2><p class="asin">${p.a}</p>
+ <h3>Listing image 2 · 2000 × 2000</h3>
+ <div class="card sq"><a href="${l}" target="_blank"><img src="${l}" alt="${p.n} holiday listing image 2" loading="lazy"></a>
+ <div class="cap"><span>Replaces the current image 2</span><a href="${l}" download>Download 2000×2000</a></div></div>
+ <h3>A+ content · 4 modules · 970 × 600</h3>
+ ${M.map(([f,t])=>{const hi=`${p.k}/${p.k}_${f}_1940x1200@2x.jpg`,lo=`${p.k}/${p.k}_${f}_970x600.jpg`;
+ return `<div class="card"><a href="${hi}" target="_blank"><img src="${hi}" alt="${p.n} ${t}" loading="lazy"></a>
+ <div class="cap"><span>${t}</span><span><a href="${lo}" download>970×600</a> · <a href="${hi}" download>1940×1200</a></span></div></div>`}).join('')}
+ </section>`}).join('');
+</script>
+</body>
+</html>
